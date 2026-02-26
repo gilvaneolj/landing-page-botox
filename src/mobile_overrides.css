@@ -1,0 +1,230 @@
+/* =========================================
+   MOBILE RESPONSIVENESS REPAIRS (UPDATED)
+   ========================================= */
+
+/* 1. Fix Cards Grid (Bio-Tensor Section) */
+@media (max-width: 900px) {
+    .bio-tensor-section .cards-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .feature-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* 2. Fix Self-Care Section (was Emotional Grid) */
+@media (max-width: 900px) {
+    .self-care-grid {
+        display: flex !important;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .self-care-content,
+    .self-care-visual {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Text */
+    .self-care-content {
+        order: 1;
+        /* Text first */
+    }
+
+    /* Image */
+    .self-care-visual {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .self-care-title {
+        font-size: 2rem !important;
+        line-height: 1.2;
+    }
+
+    .editorial-body {
+        font-size: 1rem !important;
+    }
+}
+
+/* 3. Fix Formula Section Grid (Luxury Redesign) */
+@media (max-width: 1100px) {
+    .formula-grid-luxury {
+        grid-template-columns: 1fr !important;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .feature-column.left-col,
+    .feature-column.right-col {
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    .feature-icon-wrap {
+        margin: 0 auto 20px auto !important;
+    }
+
+    .product-center {
+        margin: 40px 0;
+        /* Default order is fine (appears 2nd in DOM) */
+    }
+
+    .product-image {
+        max-width: 250px;
+        /* Reduce size on mobile */
+        margin: 0 auto;
+    }
+}
+
+/* 4. Fix Hero Section (Title + Image) */
+@media (max-width: 900px) {
+    .hero-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-content {
+        display: contents;
+        /* Allows children to be direct flex items of container */
+        text-align: center;
+    }
+
+    .hero-eyebrow {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-title {
+        order: 2;
+        margin-bottom: 20px;
+        font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
+        line-height: 1.1 !important;
+        letter-spacing: -0.5px !important;
+        padding: 0 10px;
+    }
+
+    .hero-image-wrapper {
+        order: 3;
+        margin: 20px auto 40px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hero-subtitle {
+        order: 4;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .hero-benefits {
+        order: 5;
+    }
+
+    .hero-cta {
+        order: 6;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* 5. General Mobile Tweaks */
+@media (max-width: 480px) {
+
+    .section-title,
+    .section-header h2,
+    .hero-title {
+        font-size: 1.8rem !important;
+        letter-spacing: -0.5px !important;
+        line-height: 1.15 !important;
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Reduce vertical spacing for a tighter iPhone feel */
+    section {
+        padding: 40px 0 !important;
+    }
+
+    .glass-result,
+    .glass-trust {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        right: auto;
+        top: auto;
+        background: rgba(255, 255, 255, 0.9);
+        margin: 10px auto;
+        transform: none !important;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .italic-highlight {
+        display: inline !important;
+        padding: 0 !important;
+    }
+
+    .hero-title {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* 6. Pricing Mobile Adjustments */
+@media (max-width: 600px) {
+    .pricing-grid-luxury {
+        grid-template-columns: 1fr !important;
+        /* Stack cards */
+        gap: 40px;
+    }
+
+    .price-card-luxury {
+        max-width: 100%;
+    }
+}
+
+/* 7. Comparison Section Mobile */
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .comp-table {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .col-reeva,
+    .col-others {
+        width: 100%;
+    }
+}
+
+/* 8. Testimonials & Video Grids Mobile */
+@media (max-width: 900px) {
+
+    .testimonials-grid,
+    .video-grid-luxury {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+
+    .testimonial-card,
+    .video-card-luxury {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
